@@ -4,8 +4,11 @@
 package gosigar
 
 import (
+	"bytes"
+	"encoding/binary"
 	"syscall"
 	"time"
+	"unsafe"
 )
 
 func (self *Uptime) Get() error {
